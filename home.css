@@ -1,0 +1,83 @@
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(211, 210, 210);
+}
+.wrapper {
+    width: 1300px;
+    margin: 0 auto;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black; 
+    font-size: 16px;
+    position: relative;
+}
+nav ul li a.active:before {
+    position: absolute;
+    content: "";
+    width: 35%;
+    height: 1px;
+    border-bottom: 2px solid black;
+    bottom: -6px;
+}
+
+nav ul li a:before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    border-bottom: 2px solid gray;
+    bottom: -6px; 
+    transition: width .4s;
+}
+
+nav ul li a:hover:before {
+    width: 35%;
+}
+.hero1 {
+    display: flex;
+    gap: 80px;
+    margin: 80px auto;
+}
+
+.left-col {
+    border-radius: 70px;
+    transform: scale(1);
+    transition: transform .4s;
+}
+
+.left-col:hover {
+    transform: scale(1.03);
+}
+.right-col {
+    padding-left: 60px;
+    border-color: black;
+    border-left: 2px solid black;
+}
+
+.desc {
+    line-height: 40px;
+}
+
+
+
+
+
