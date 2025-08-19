@@ -1,48 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jonny Shen</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="home.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jonny Shen</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+
+  <!-- Page Styles -->
+  <link rel="stylesheet" href="home.css" />
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <a class="logo" href="#" >JONNY SHEN</a>
-            
-            <nav>
-                <ul>
-                    <li><a class="active" href="#">HOME</a></li>
-                    <li><a href="gallery.html">GALLERY</a></li>
-                    <li><a href="#">RESUME</a></li>
-                </ul>
-            </nav>      
-        </header>
+  <div class="wrapper">
+    <!-- Header / Nav  -->
+    <header>
+      <a class="logo" href="#">JONNY SHEN</a>
+      <nav>
+        <ul>
+          <li><a class="active" href="#">HOME</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="#">RESUME</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <section class="hero1">
-            <img class="left-col" src="img/Jonny.jpg">
-            <div class="right-col">
-                <h2 class="title">About Me</h2>
-                <p class="desc"> Hello and welcome to my personal website! My name is Jonny Shen and this is my first ever CS project! 
-                    For this website, i will only be using HTML and CSS but am looking forward to broadening my skills in the future.
-                </p>
-                <p class="desc"> I am currently a student at UC Davis as a Computer Science and Engineering Major. Some of my hobbies include playing the piano, tennis, 
-                    and running my custom designed computers business. 
-                </p>
-                <h2>Contact Info</h2>
-                <p class="desc">
-                    Phone Number: 919-519-4228
-                </p>    
-                <p class="desc">
-                    Email: jjshen@ucdavis.edu
-                </p>
-            </div>
-        </section>
-    </div>
+    <!-- =========================
+         ABOUT ME 
+       ========================== -->
+    <section class="hero1" id="about">
+      <img class="left-col" src="img/Jonny.jpg" alt="Photo of Jonny Shen" />
+      <div class="right-col">
+        <h2 class="title">About Me</h2>
+        <p class="desc">
+          Hi! I’m Jonny Shen, finishing up my bachelor’s in Electrical Engineering at UC Davis.
+          I originally started in Computer Science and Engineering, but I didn’t find much enjoyment in coding by itself.
+          Since I’ve always loved working hands‑on with PC parts and building things, switching to EE made the most sense for me.
+        </p>
+        <p class="desc">
+          I was born in Los Angeles and moved to North Carolina as a kid, growing up in a small neighborhood in Chapel Hill.
+          I really wanted to broaden my horizons and try something new, so I set my sights on schools like UC Davis, and here I am!
+        </p>
+
+        <!-- Contact -->
+        <h2>Contact Info</h2>
+        <p class="desc">Phone Number: 919-519-4228</p>
+        <p class="desc">Email: jjshen@ucdavis.edu</p>
+      </div>
+    </section>
+
+    <!-- =========================
+         MUSIC / INSTRUMENTS
+         - Photo left, header + paragraph right
+       ========================== -->
+    <section class="hero1" id="music">
+      <!-- Replace with your preferred instrument photo -->
+      <img class="left-col" src="img/guitar.jpg" alt="Jonny playing guitar" />
+      <div class="right-col">
+        <h2 class="title">Music</h2>
+        <p class="desc">
+          Music is my reset button. I grew up on piano, learned trombone in middle and high school band, and more recently picked up guitar.
+          I also love to sing. It’s my favorite way to unplug and make something creative outside of engineering.
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================
+         SPORTS
+         - Photo left, header + paragraph right
+       ========================== -->
+    <section class="hero1" id="sports">
+      <!-- Use tennis or badminton photo -->
+      <img class="left-col" src="img/tennis.jpg" alt="Jonny playing tennis" />
+      <div class="right-col">
+        <h2 class="title">Sports</h2>
+        <p class="desc">
+          Outside of music, I also like to play raquet sports such as tennis and badminton. I enjoy the fast pace and strategy behind each match, but I also just like the feeling of moving around and having fun while staying competitive.
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================
+         RF LAB & INTERNSHIP
+         - Photo left, header + paragraph right
+       ========================== -->
+    <section class="hero1" id="rf">
+      <!-- Replace with your RF bench / equipment photo -->
+      <img class="left-col" src="img/rf_lab.jpg" alt="RF lab bench with analyzer and signal generator" />
+      <div class="right-col">
+        <h2 class="title">RF Lab & Internship</h2>
+        <p class="desc">
+          I’ve been hands‑on with RF/microwave test gear — running measurements like S‑parameters and return/insertion loss,
+          and assembling/validating subsystems. Seeing theory meet the bench taught me calm troubleshooting and clear documentation.
+        </p>
+      </div>
+    </section>
+
+  </div>
 </body>
 </html>
