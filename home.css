@@ -59,13 +59,11 @@ nav ul li a:hover:before {
 }
 
 .left-col {
-  width: 42%;
-  max-width: 520px;
-  aspect-ratio: 4 / 3;   /* optional */
-  object-fit: cover;     /* optional: neat crop */
-  height: auto;
-  display: block;
+  width: 400px;         /* fixed width for consistency */
+  height: 300px;        /* fixed height for consistency */
+  object-fit: cover;    /* crops neatly without distortion */
   border-radius: 24px;
+  display: block;
 }
 
 .left-col:hover {
@@ -80,6 +78,7 @@ nav ul li a:hover:before {
 .desc {
     line-height: 40px;
 }
+
 
 
 
