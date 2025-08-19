@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume — Jonny Shen</title>
+  <link rel="stylesheet" href="home.css" />
+  <style>
+    /* Minimal page-specific tweaks */
+    .resume-wrap { max-width: 1000px; margin: 40px auto; padding: 0 16px; }
+    .resume-actions { margin: 16px 0 24px; }
+    .btn {
+      display:inline-block; padding:10px 16px; border:2px solid #000; border-radius:10px; 
+      text-decoration:none; color:#000;
+    }
+    .embed-box {
+      width:100%; height: 1000px; border:0; border-radius: 10px; 
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+    @media (max-width: 768px) {
+      .embed-box { height: 75vh; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <a class="logo" href="index.html">JONNY SHEN</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a class="active" href="#">RESUME</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <main class="resume-wrap">
+    <h2 class="title">Resume</h2>
+    <div class="resume-actions">
+      <a class="btn" href="jonnyresume.pdf" target="_blank" rel="noopener">Open PDF in new tab</a>
+      <a class="btn" href="jonnyresume.pdf" download>Download PDF</a>
+    </div>
+
+    <!-- Embedded PDF view (works in most modern browsers) -->
+    <iframe class="embed-box" src="jonnyresume.pdf"></iframe>
+
+    <!-- Fallback if the viewer can't load PDFs -->
+    <p class="desc" style="margin-top:16px;">
+      If the PDF doesn’t load, you can <a href="jonnyresume.pdf" target="_blank" rel="noopener">open it here</a> 
+      or <a href="jonnyresume.pdf" download>download it</a>.
+    </p>
+  </main>
+</body>
+</html>
